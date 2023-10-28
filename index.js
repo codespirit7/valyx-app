@@ -4,7 +4,7 @@ const Transaction = require("./models/Transaction"); // Import your transaction 
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://codespirit7:zRyhZLbby8UWQsEj@cluster0.wvcngti.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://<username>:<password>@cluster0.wvcngti.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
