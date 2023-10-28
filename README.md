@@ -32,38 +32,38 @@ f. Add 'credentials.json' with the path to your OAuth client credentials file.
 
 4. The project is divided into four parts.
    A. To retrieve the attached pdf from Gmail with varying addresses and the same subject, store it in pdfDirectory folder.
-      ```node script.js```
+      ``` node script.js ```
       After running the script it will ask for Google authentication.
 
    B. Extract the data from multiple pdf and store it in JSON data in outputDirectory folder.
-      ```node main.mjs```
+      ``` node main.mjs ```
 
    C. Save the extracted JSON data on MongoDB database.
-      ```node database.mjs```
+      ``` node database.mjs ```
 
   Note: For continously running the script
         1. install pm2
-        ```npm install pm2```
+        ``` npm install pm2 ```
         2. run all the above script
-        ```pm2 start script.js```
-        ```pm2 start main.mjs```
-        ```pm2 start database.mjs```
+        ``` pm2 start script.js ```
+        ``` pm2 start main.mjs ```
+        ``` pm2 start database.mjs ```
    
    D. start the express server for interacting with the parsed bank statement data.
-      ```npm run start```
+      ``` npm run start ```
 
 5. Testing API with POSTMAN/ThunderClient
       API Endpoints:
       1. API endpoint to retrieve a list of parsed transactions.
 
-        ```http://localhost:3000/transactions/```
+        ``` http://localhost:3000/transactions/ ```
 
       2. API endpoint to search for transactions within a specific date range.
 
-        ```http://localhost:3000/transactions/search?startDate=08-08-2023&endDate=10-08-2023```
+        ``` http://localhost:3000/transactions/search?startDate=08-08-2023&endDate=10-08-2023 ```
 
       3. API endpoint to get the total balance as of a specific date.
 
-         ```https://localhost:3000/balance?date = 2023-08-08```
+         ``` https://localhost:3000/balance?date = 2023-08-08 ```
     
 
