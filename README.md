@@ -60,45 +60,57 @@ f. Add 'credentials.json' with the path to your OAuth client credentials file.
      node database.mjs
       ```
 
+
   Note: For continously running the script
+  
         1. install pm2
-        ``` 
+        
+        ```
         npm install pm2
         ```
-        2. run all the above script
+        
+        2. run all the above script.
+        
         ```
         pm2 start script.js
+        
         ```
+        
         ```
         pm2 start main.mjs
         ```
+        
         ```
         pm2 start database.mjs
+        
         ```
    
    D. start the express server for interacting with the parsed bank statement data.
+   
       ```
       npm run start
       ```
 
 5. Testing API with POSTMAN/ThunderClient
       API Endpoints:
+      
       1. API endpoint to retrieve a list of parsed transactions.
 
-        ```
+       ```
        http://localhost:3000/transactions/
-     ```
+       ```
 
       2. API endpoint to search for transactions within a specific date range.
 
-        ```
-     http://localhost:3000/transactions/search?startDate=08-08-2023&endDate=10-08-2023
+      ```
+       http://localhost:3000/transactions/search?startDate=08-08-2023&endDate=10-08-2023
+      
      ```
 
       3. API endpoint to get the total balance as of a specific date.
 
-         ```
-        https://localhost:3000/balance?date = 2023-08-08
-     ```
+       ```
+       https://localhost:3000/balance?date = 2023-08-08
+       ```
     
 
