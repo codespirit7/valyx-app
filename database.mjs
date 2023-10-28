@@ -6,7 +6,7 @@ import DataModel from "./models/Transaction.js";
 
 // Replace with your MongoDB connection string
 mongoose.connect(
-  "mongodb+srv://codespirit7:zRyhZLbby8UWQsEj@cluster0.wvcngti.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://<username>:<password>@cluster0.wvcngti.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
