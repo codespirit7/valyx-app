@@ -1,4 +1,4 @@
-# valyx-
+# FINXTRACT: PDF PARSING DATA ENRICHMENT API
 
 1. git clone
 
